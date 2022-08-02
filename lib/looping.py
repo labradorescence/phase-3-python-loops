@@ -39,24 +39,12 @@ def square_integers(int_list):
 
 def fizzbuzz():
     # code goes here
-    for i in range(101):
-        if i % 3 == 0:
-            i = "Fizz"
-        if i % 5 == 0:
-           i = "Buzz"
+    for i in range(1, 101):
         if i % 15 == 0:
-           i = "FizzBuzz"
+            i = "FizzBuzz"
+        elif i % 3 == 0:
+            i = "Fizz"
+        elif i % 5 == 0:
+           i = "Buzz"
         print(i)
-        # stri = str(i)
-        # for each_stri in stri:
-        #     if each_stri == "3":
-        #         print("fizz")
-        #     if each_stri == "5":
-        #         print("fuzz")
-        #     if each_stri == "3" and each_stri == "5":
-        #         print("fizzbuzz")
-        # print(stri)   
-
     pass
-
-fizzbuzz()
